@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning Theories Timeline</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="filters" aria-hidden="true" focusable="false">
+      <filter id="caricatureFilter" color-interpolation-filters="sRGB">
+        <feColorMatrix
+          type="matrix"
+          values="1.24 0.06 0.02 0 0.01
+                  0.05 1.16 0.04 0 0.01
+                  0.02 0.05 1.08 0 0.02
+                  0 0 0 1 0"
+        />
+        <feComponentTransfer>
+          <feFuncR type="discrete" tableValues="0.05 0.18 0.36 0.58 0.78 0.95 1" />
+          <feFuncG type="discrete" tableValues="0.05 0.2 0.38 0.58 0.78 0.94 1" />
+          <feFuncB type="discrete" tableValues="0.06 0.18 0.34 0.54 0.74 0.92 1" />
+        </feComponentTransfer>
+      </filter>
+    </svg>
+    <main class="shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Interactive research sketch</p>
+          <h1 class="typing-title"><span data-text="Learning Theories Timeline">Learning Theories Timeline</span></h1>
+        </div>
+        <div class="header-actions" aria-label="Timeline controls">
+          <button class="text-button" id="jumpAiedTree" type="button">AIED Tree</button>
+          <button class="icon-button" id="prevMilestone" type="button" title="Previous milestone" aria-label="Previous milestone">
+            <span aria-hidden="true">&lt;</span>
+          </button>
+          <button class="icon-button" id="nextMilestone" type="button" title="Next milestone" aria-label="Next milestone">
+            <span aria-hidden="true">&gt;</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="workbench" id="workbench" aria-label="Interactive learning theories visualization">
+        <aside class="legend-panel" id="legendPanel" aria-label="Theory filters and researchers">
+          <div class="panel-section">
+            <div class="section-heading">
+              <span>Focus lanes</span>
+              <button id="resetFilters" class="text-button" type="button">Reset</button>
+            </div>
+            <div class="filter-list" id="filterList"></div>
+          </div>
+
+          <div class="panel-section">
+            <div class="section-heading">
+              <span>Researchers</span>
+            </div>
+            <div class="researcher-strip" id="researcherStrip"></div>
+          </div>
+        </aside>
+
+        <section class="timeline-panel" aria-label="Timeline">
+          <div class="timeline-toolbar">
+            <div>
+              <p class="toolbar-kicker">Drag timeline</p>
+              <h2 id="activeTheoryName">All theories</h2>
+            </div>
+            <div class="view-tools" aria-label="View tools">
+              <button id="togglePanels" class="text-button view-toggle" type="button" aria-pressed="false">Map view</button>
+              <button id="zoomOut" class="tool-button" type="button" title="Zoom out" aria-label="Zoom out">-</button>
+              <button id="zoomIn" class="tool-button" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+            </div>
+          </div>
+
+          <div class="timeline-viewport" id="timelineViewport" tabindex="0" aria-label="Draggable timeline">
+            <div class="timeline-canvas" id="timelineCanvas">
+              <div class="year-axis" id="yearAxis" aria-hidden="true"></div>
+              <div class="lanes" id="lanes"></div>
+            </div>
+          </div>
+
+          <div class="minimap" id="minimap" aria-label="Timeline overview">
+            <div class="minimap-track" id="minimapTrack">
+              <div class="minimap-window" id="minimapWindow"></div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="detail-panel" id="detailPanel" aria-label="Selected milestone details">
+          <div class="detail-topline">
+            <span id="detailYear">1956</span>
+            <span id="detailTheory">Cognitivism</span>
+          </div>
+          <div class="detail-portrait" id="detailPortrait" aria-hidden="true"></div>
+          <h2 id="detailTitle">The Magical Number Seven</h2>
+          <p id="detailSummary"></p>
+          <dl class="detail-meta">
+            <div>
+              <dt>Researcher</dt>
+              <dd id="detailResearcher"></dd>
+            </div>
+            <div>
+              <dt>Milestone study</dt>
+              <dd id="detailStudy"></dd>
+            </div>
+            <div>
+              <dt>Learning lens</dt>
+              <dd id="detailLens"></dd>
+            </div>
+          </dl>
+          <a id="detailSource" class="source-link" href="#" target="_blank" rel="noreferrer">Open source trail</a>
+        </aside>
+      </section>
+
+      <section class="aied-tree-panel is-collapsed" id="aiedTreePanel" aria-label="AIED lineage tree">
+        <div class="aied-tree-heading">
+          <div>
+            <p class="eyebrow">Separate lineage</p>
+            <h2>AIED Tree</h2>
+          </div>
+          <p>
+            AIED is shown as a research lineage, not a single learning theory: CAI and ITS roots, Schank's learning-by-doing branch, agents, EDM / LA / QE, and the GenAI turn that cross-links back to agency.
+          </p>
+          <button class="text-button aied-toggle" id="toggleAiedTree" type="button" aria-expanded="false" aria-controls="aiedTree">Expand tree</button>
+        </div>
+        <div class="aied-tree" id="aiedTree" hidden></div>
+      </section>
+
+      <dialog class="milestone-dialog" id="milestoneDialog" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close detail popup">&times;</button>
+        <div class="modal-topline">
+          <span id="modalYear"></span>
+          <span id="modalTheory"></span>
+        </div>
+        <div class="modal-grid">
+          <div>
+            <div class="modal-portrait" id="modalPortrait" aria-hidden="true"></div>
+            <h2 id="modalTitle"></h2>
+            <p class="modal-summary" id="modalSummary"></p>
+          </div>
+          <div class="modal-body">
+            <section>
+              <h3>Milestone Study</h3>
+              <p id="modalStudy"></p>
+            </section>
+            <section>
+              <h3>Why It Matters</h3>
+              <p id="modalWhy"></p>
+            </section>
+            <section>
+              <h3>Learning Design Takeaway</h3>
+              <p id="modalTakeaway"></p>
+            </section>
+            <section>
+              <h3>Connection</h3>
+              <p id="modalConnection"></p>
+            </section>
+            <div class="modal-actions">
+              <button class="text-button" id="modalPrev" type="button">Previous</button>
+              <a id="modalSource" class="source-link" href="#" target="_blank" rel="noreferrer">Open source trail</a>
+              <button class="text-button" id="modalNext" type="button">Next</button>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
