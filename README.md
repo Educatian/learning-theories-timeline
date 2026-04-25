@@ -23,6 +23,16 @@
   </p>
 </div>
 
+## Developer
+
+Developed by Dr. Jewoong Moon, The University of Alabama.
+
+For questions, corrections, or suggestions, please contact:
+
+```text
+jmoon19@ua.edu
+```
+
 ## Overview
 
 This is a single-page interactive visualization for tracing how major learning theory traditions and adjacent research fields developed over time. It is designed as a research sketch: dense enough to compare traditions, but visual enough to use in discussion, teaching, or exploratory review.
