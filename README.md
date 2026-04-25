@@ -7,7 +7,8 @@
 
   <p>
     An interactive research map of learning theories, instructional design models,
-    AIED, learning analytics, EDM, LAK, Quantitative Ethnography, and agentic AI.
+    games, VR, immersive learning, AIED, learning analytics, EDM, LAK,
+    Quantitative Ethnography, and agentic AI.
   </p>
 
   <p>
@@ -44,6 +45,7 @@ The page is intentionally static. There is no build step, no framework runtime, 
 - Behaviorism, Cognitivism, Constructivism, Constructionism, and Social Cognitive / Agency traditions
 - Embodied, situated, distributed, and embedded cognition
 - Learning Sciences and Science of Learning milestones
+- Internal motivation, flow, digital game-based learning, VR, and immersive learning
 - Instructional Design models and AECT / ISLT field formation
 - EGRI / EGRA as an applied teaching cycle
 - AIED lineage from CAI and ITS to Schank, agents, analytics, GenAI, and Agentivism

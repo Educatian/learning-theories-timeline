@@ -42,6 +42,13 @@ const theories = [
     lens: "Learning as building public artifacts that make thinking visible and revisable."
   },
   {
+    id: "games-immersive",
+    name: "Games / VR / Immersive Learning",
+    period: "1970s-2020s",
+    color: "#8f5f8c",
+    lens: "Learning as motivated, rule-based, embodied, simulated, and immersive participation in designed worlds."
+  },
+  {
     id: "instructional-design",
     name: "Instructional Design Models",
     period: "2000s-2010s",
@@ -279,6 +286,94 @@ const researchers = {
     photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Mitchel%20Resnick.jpg",
     position: "50% 36%",
     scale: 1.42
+  },
+  deciRyan: {
+    name: "Deci & Ryan",
+    initials: "DR",
+    color: "#8f5f8c",
+    photo: "https://www.rochester.edu/newscenter/wp-content/uploads/2026/02/inline-2010-05-25_RichardRyan_and_EdwardDeci_201.jpg",
+    position: "50% 28%",
+    scale: 1.22
+  },
+  csikszentmihalyi: {
+    name: "Mihaly Csikszentmihalyi",
+    initials: "MC",
+    color: "#8f5f8c",
+    photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Mihaly%20Csikszentmihalyi%20%28headshot%29.jpg",
+    position: "50% 32%",
+    scale: 1.14
+  },
+  malone: {
+    name: "Thomas W. Malone",
+    initials: "TM",
+    color: "#8f5f8c",
+    photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20W%20Malone%202008.jpg",
+    position: "50% 28%",
+    scale: 1.22
+  },
+  prensky: {
+    name: "Marc Prensky",
+    initials: "MP",
+    color: "#8f5f8c",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
+  gee: {
+    name: "James Paul Gee",
+    initials: "JG",
+    color: "#8f5f8c",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
+  squire: {
+    name: "Kurt Squire",
+    initials: "KS",
+    color: "#8f5f8c",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
+  dede: {
+    name: "Chris Dede",
+    initials: "CD",
+    color: "#8f5f8c",
+    photo: "https://www.gse.harvard.edu/sites/default/files/styles/1x1__focal_point_scale_and_crop__lg/public/faculty/images/christopher-dede-311.jpg?h=462ffc91&itok=sR6zxVAK",
+    position: "50% 26%",
+    scale: 1.18
+  },
+  cummingsBailenson: {
+    name: "Cummings & Bailenson",
+    initials: "CB",
+    color: "#8f5f8c",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
+  merchant: {
+    name: "Zahira Merchant",
+    initials: "ZM",
+    color: "#8f5f8c",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
+  radianti: {
+    name: "Jaziar Radianti",
+    initials: "JR",
+    color: "#8f5f8c",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
+  makransky: {
+    name: "Guido Makransky",
+    initials: "GM",
+    color: "#8f5f8c",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
   },
   bandura: {
     name: "Albert Bandura",
@@ -856,6 +951,136 @@ const milestones = [
     study: "Scratch launch and online creative programming community.",
     summary: "Scratch made constructionist computing more social, remixable, and accessible, moving from microworld programming toward networked creative learning.",
     source: "https://news.mit.edu/2007/resnick-scratch"
+  },
+  {
+    id: "deci-1971",
+    theory: "games-immersive",
+    year: 1971,
+    title: "Intrinsic motivation",
+    researcher: "deciRyan",
+    study: "Effects of Externally Mediated Rewards on Intrinsic Motivation.",
+    summary: "Deci showed that some external rewards can reduce intrinsic motivation, giving game-based learning an early warning about points, badges, prizes, and controlling feedback.",
+    source: "https://doi.org/10.1037/h0030644"
+  },
+  {
+    id: "flow-1975",
+    theory: "games-immersive",
+    year: 1975,
+    title: "Flow experience",
+    researcher: "csikszentmihalyi",
+    study: "Beyond Boredom and Anxiety.",
+    summary: "Csikszentmihalyi's flow account made challenge-skill balance, clear goals, feedback, and deep absorption central to thinking about engaging learning environments.",
+    source: "https://www.worldcat.org/title/1541844"
+  },
+  {
+    id: "malone-1981",
+    theory: "games-immersive",
+    year: 1981,
+    title: "Intrinsic game motivation",
+    researcher: "malone",
+    study: "Toward a Theory of Intrinsically Motivating Instruction.",
+    summary: "Malone analyzed computer games to explain why challenge, fantasy, curiosity, and control can make instruction engaging without relying only on external rewards.",
+    source: "https://doi.org/10.1016/S0364-0213(81)80017-1"
+  },
+  {
+    id: "deci-ryan-1985",
+    theory: "games-immersive",
+    year: 1985,
+    title: "Self-determination theory",
+    researcher: "deciRyan",
+    study: "Intrinsic Motivation and Self-Determination in Human Behavior.",
+    summary: "Deci and Ryan framed motivation around autonomy, competence, and relatedness, a core lens for serious games, gamification, and learner agency.",
+    source: "https://link.springer.com/book/10.1007/978-1-4899-2271-7"
+  },
+  {
+    id: "malone-lepper-1987",
+    theory: "games-immersive",
+    year: 1987,
+    title: "Making learning fun",
+    researcher: "malone",
+    study: "Making Learning Fun: A Taxonomy of Intrinsic Motivations for Learning.",
+    summary: "Malone and Lepper organized intrinsic motivation into individual and interpersonal factors, giving educational game design a vocabulary beyond entertainment.",
+    source: "https://www.scirp.org/reference/referencespapers?referenceid=2686741"
+  },
+  {
+    id: "prensky-2001",
+    theory: "games-immersive",
+    year: 2001,
+    title: "Digital game-based learning",
+    researcher: "prensky",
+    study: "Digital Game-Based Learning.",
+    summary: "Prensky popularized digital game-based learning as a design and training agenda, pushing games into mainstream educational technology conversations.",
+    source: "https://www.mheducation.com/highered/product/digital-game-based-learning-prensky/M9780071363442.html"
+  },
+  {
+    id: "gee-2003",
+    theory: "games-immersive",
+    year: 2003,
+    title: "Games and literacy",
+    researcher: "gee",
+    study: "What Video Games Have to Teach Us About Learning and Literacy.",
+    summary: "Gee argued that good games model learning principles such as identity, situated meaning, feedback, practice, systems thinking, and problem solving.",
+    source: "https://us.macmillan.com/books/9781403984531/whatvideogameshavetoteachusaboutlearningandliteracy"
+  },
+  {
+    id: "squire-2006",
+    theory: "games-immersive",
+    year: 2006,
+    title: "Designed experience",
+    researcher: "squire",
+    study: "From Content to Context: Videogames as Designed Experience.",
+    summary: "Squire reframed game-based learning as participation in designed worlds where identity, practice, community, and context shape understanding.",
+    source: "https://doi.org/10.3102/0013189X035008019"
+  },
+  {
+    id: "dede-2009",
+    theory: "games-immersive",
+    year: 2009,
+    title: "Immersive interfaces",
+    researcher: "dede",
+    study: "Immersive Interfaces for Engagement and Learning.",
+    summary: "Dede linked immersion, simulation, identity, and situated experience to learning designs that can make inaccessible systems explorable.",
+    source: "https://doi.org/10.1126/science.1167311"
+  },
+  {
+    id: "merchant-2014",
+    theory: "games-immersive",
+    year: 2014,
+    title: "VR instruction meta-analysis",
+    researcher: "merchant",
+    study: "Effectiveness of virtual reality-based instruction on students' learning outcomes in K-12 and higher education.",
+    summary: "Merchant and colleagues synthesized VR instruction studies, making learning outcomes, learner characteristics, and design features part of the VR evidence conversation.",
+    source: "https://doi.org/10.1016/j.compedu.2013.07.033"
+  },
+  {
+    id: "cummings-bailenson-2016",
+    theory: "games-immersive",
+    year: 2016,
+    title: "Presence and immersion",
+    researcher: "cummingsBailenson",
+    study: "How Immersive Is Enough? A Meta-Analysis of the Effect of Immersive Technology on User Presence.",
+    summary: "Cummings and Bailenson synthesized how technical immersion influences presence, clarifying why VR learning design cannot rely on novelty alone.",
+    source: "https://doi.org/10.1080/15213269.2015.1015740"
+  },
+  {
+    id: "radianti-2020",
+    theory: "games-immersive",
+    year: 2020,
+    title: "Immersive VR review",
+    researcher: "radianti",
+    study: "A systematic review of immersive virtual reality applications for higher education.",
+    summary: "Radianti and colleagues mapped higher education VR designs, surfacing gaps around pedagogy, assessment, collaboration, accessibility, and research agenda.",
+    source: "https://doi.org/10.1016/j.compedu.2019.103778"
+  },
+  {
+    id: "camil-2021",
+    theory: "games-immersive",
+    year: 2021,
+    title: "CAMIL",
+    researcher: "makransky",
+    study: "The Cognitive Affective Model of Immersive Learning.",
+    summary: "Makransky and Petersen proposed CAMIL, connecting immersion, presence, agency, motivation, embodiment, cognitive load, self-efficacy, and learning outcomes in IVR.",
+    source: "https://doi.org/10.1007/s10648-020-09586-2"
   },
   {
     id: "aect-1923",
@@ -1553,6 +1778,71 @@ const milestoneExplanations = {
     takeaway: "Use low-floor, high-ceiling tools that support projects, peers, passion, play, remixing, and sharing.",
     connection: "It extends Logo and Mindstorms into a networked creative-learning community."
   },
+  "deci-1971": {
+    why: "Deci made a direct empirical challenge to simple reward logic by showing that rewards can undermine intrinsic motivation when they feel controlling.",
+    takeaway: "Use scores, badges, prizes, and gamified incentives carefully; they should support competence and autonomy, not replace meaningful engagement.",
+    connection: "This gives the games lane a motivational root before educational games become a technology movement."
+  },
+  "flow-1975": {
+    why: "Flow explains why difficult activity can become deeply engaging when challenge, skill, goals, and feedback line up.",
+    takeaway: "Tune task difficulty, feedback timing, and learner control so engagement comes from productive absorption rather than decorative stimulation.",
+    connection: "Flow becomes a major bridge between motivation psychology, game design, simulation, and immersive learning."
+  },
+  "malone-1981": {
+    why: "Malone studied what makes computer games fun and converted that insight into an instructional theory around challenge, fantasy, curiosity, and control.",
+    takeaway: "Design learning activities with meaningful goals, uncertain outcomes, curiosity gaps, responsive feedback, and learner control.",
+    connection: "This is one of the clearest early links between computer games and instructional motivation."
+  },
+  "deci-ryan-1985": {
+    why: "Self-determination theory gives game-based learning a durable way to distinguish deep motivation from shallow compliance.",
+    takeaway: "Support autonomy, competence, and relatedness through choices, optimal challenge, feedback, collaboration, and identity-relevant goals.",
+    connection: "It links motivation, games, agency, social learning, and later critiques of gamification."
+  },
+  "malone-lepper-1987": {
+    why: "The taxonomy broadened game motivation beyond solo fun by including curiosity, challenge, fantasy, control, cooperation, competition, and recognition.",
+    takeaway: "Treat fun as a design problem with analyzable motivational components, not as a surface aesthetic.",
+    connection: "It prepares the field for serious games, educational software, and motivational design models."
+  },
+  "prensky-2001": {
+    why: "Prensky made digital game-based learning visible to instructional technology, corporate training, and popular education audiences.",
+    takeaway: "Consider games when practice, decision making, feedback, simulation, and persistence are central learning requirements.",
+    connection: "It marks the moment game-based learning becomes a mainstream edtech argument rather than a niche design experiment."
+  },
+  "gee-2003": {
+    why: "Gee shifted attention from games as rewards to games as learning systems with identities, semiotic domains, situated meanings, and feedback-rich practice.",
+    takeaway: "Analyze what the game asks learners to become, notice, do, discuss, and improve over time.",
+    connection: "This links game-based learning to literacy, identity, situated cognition, and the learning sciences."
+  },
+  "squire-2006": {
+    why: "Squire argued that games teach through designed experience, not just content delivery, so research must study the game world and its surrounding communities.",
+    takeaway: "Design and evaluate games as activity systems: rules, identities, tools, communities, histories, and social contexts all matter.",
+    connection: "It connects game-based learning to situated cognition, constructionist design, and learning sciences methodology."
+  },
+  "dede-2009": {
+    why: "Dede made immersive interfaces a serious learning-design topic by tying simulations, identity, presence, and situated action to engagement and understanding.",
+    takeaway: "Use immersion when learners need to experience scale, danger, complexity, social roles, or invisible systems that ordinary classrooms cannot provide.",
+    connection: "This is a major bridge from games and simulations into VR and immersive learning."
+  },
+  "merchant-2014": {
+    why: "The meta-analysis helped move VR learning from promise claims toward evidence about when VR instruction produces learning gains.",
+    takeaway: "Ask what the VR design adds instructionally: practice, visualization, feedback, embodiment, transfer, or collaboration.",
+    connection: "It connects immersive learning to evidence standards in educational technology and instructional design."
+  },
+  "cummings-bailenson-2016": {
+    why: "Presence is often assumed to be the key value of VR, and this meta-analysis clarified which technical features tend to increase it.",
+    takeaway: "Do not equate higher fidelity with better learning; align tracking, stereoscopy, field of view, interaction, and reflection with the learning goal.",
+    connection: "It gives immersive learning a media psychology anchor that complements instructional design evidence."
+  },
+  "radianti-2020": {
+    why: "The systematic review showed that immersive VR in higher education was growing quickly but still uneven in pedagogy, collaboration, and assessment.",
+    takeaway: "Build VR studies with clearer learning objectives, instructional scaffolds, accessibility plans, and outcome measures.",
+    connection: "It connects immersive learning to higher education practice and research agenda setting."
+  },
+  "camil-2021": {
+    why: "CAMIL gives IVR learning a theoretical model that links media affordances with cognitive and affective learning mechanisms.",
+    takeaway: "Design around presence and agency while managing embodiment, intrinsic motivation, self-efficacy, self-regulation, and cognitive load.",
+    connection: "It becomes a contemporary anchor for immersive learning alongside cognitive load, multimedia learning, and motivation theory."
+  },
   "aect-1923": {
     why: "The visual instruction root shows that the field began with media, representation, and instructional materials before it became educational technology.",
     takeaway: "Read AECT/ISLT historically as a professional field concerned with instructional media, systems, communication, and learning technologies.",
@@ -1991,6 +2281,7 @@ function renderLanes() {
   elements.timelineCanvas.style.setProperty("--lane-count", theories.length);
   elements.lanes.innerHTML = "";
   const slotGap = 96;
+  const firstSlotTop = 74;
 
   theories.forEach((theory) => {
     const lane = document.createElement("div");
@@ -2028,7 +2319,7 @@ function renderLanes() {
         }`;
         node.dataset.milestoneId = milestone.id;
         node.style.left = `${x}px`;
-        node.style.top = `${28 + slot * slotGap}px`;
+        node.style.top = `${firstSlotTop + slot * slotGap}px`;
         node.style.setProperty("--accent", theory.color);
         node.innerHTML = `
           <span class="year">${milestone.year}</span>
@@ -2045,7 +2336,7 @@ function renderLanes() {
       });
 
     const slotCount = Math.max(2, lastBySlot.length);
-    lane.style.height = `${102 + (slotCount - 1) * slotGap}px`;
+    lane.style.height = `${148 + (slotCount - 1) * slotGap}px`;
     elements.lanes.appendChild(lane);
   });
 }
