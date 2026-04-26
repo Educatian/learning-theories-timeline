@@ -147,9 +147,9 @@ const researchers = {
     name: "John Sweller",
     initials: "JS",
     color: "#316f9f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://www.unsw.edu.au/content/dam/profile-photo/John-Sweller.jpg",
+    position: "50% 24%",
+    scale: 1.1
   },
   piaget: {
     name: "Jean Piaget",
@@ -187,9 +187,9 @@ const researchers = {
     name: "Lucy Suchman",
     initials: "LS",
     color: "#5f7658",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Lucy%20Suchman%20%283349410560%29.jpg",
+    position: "50% 28%",
+    scale: 1.18
   },
   browncollins: {
     name: "Brown, Collins, Duguid",
@@ -211,17 +211,17 @@ const researchers = {
     name: "Edwin Hutchins",
     initials: "EH",
     color: "#5f7658",
-    photo: "",
-    position: "50% 30%",
+    photo: "https://profiles.ucsd.edu/edwin.hutchins/photo",
+    position: "50% 24%",
     scale: 1.12
   },
   clark: {
     name: "Andy Clark",
     initials: "AC",
     color: "#5f7658",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://profiles.sussex.ac.uk/p493-andy-clark/thumbnail",
+    position: "50% 24%",
+    scale: 1.1
   },
   glenberg: {
     name: "Arthur Glenberg",
@@ -243,25 +243,27 @@ const researchers = {
     name: "John D. Bransford",
     initials: "JB",
     color: "#526f8f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://wpvip.edutopia.org/wp-content/uploads/2022/10/fea_assesssb_forgetthefactsbransford.jpg?quality=85&w=300",
+    position: "50% 24%",
+    scale: 1.1
   },
   nsf: {
     name: "NSF Science of Learning",
     initials: "NS",
     color: "#526f8f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://commons.wikimedia.org/wiki/Special:FilePath/NSF_logo.svg",
+    position: "50% 50%",
+    scale: 0.86,
+    fit: "contain",
+    filter: "none"
   },
   sawyer: {
     name: "R. Keith Sawyer",
     initials: "KS",
     color: "#526f8f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://www.gse.upenn.edu/sites/default/files/styles/square_xxsml/public/image/2024/09/sawyer_keith_affiliated.jpg.webp?itok=G2eHWZff",
+    position: "50% 23%",
+    scale: 1.08
   },
   papert: {
     name: "Seymour Papert",
@@ -315,25 +317,25 @@ const researchers = {
     name: "Marc Prensky",
     initials: "MP",
     color: "#8f5f8c",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Marc%20Prensky%20%288428478678%29.jpg",
+    position: "50% 24%",
+    scale: 1.24
   },
   gee: {
     name: "James Paul Gee",
     initials: "JG",
     color: "#8f5f8c",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Paul%20Gee.jpg",
+    position: "50% 26%",
+    scale: 1.22
   },
   squire: {
     name: "Kurt Squire",
     initials: "KS",
     color: "#8f5f8c",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://ics.uci.edu/wp-content/uploads/2021/11/kurt-squire-250x300.jpg",
+    position: "50% 23%",
+    scale: 1.08
   },
   dede: {
     name: "Chris Dede",
@@ -347,33 +349,33 @@ const researchers = {
     name: "Cummings & Bailenson",
     initials: "CB",
     color: "#8f5f8c",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://comm.stanford.edu/sites/g/files/sbiybj22231/files/styles/medium_square/public/media/image/bailenson_0.png?h=90cbfd2a&itok=fKrxHykF",
+    position: "50% 24%",
+    scale: 1.08
   },
   merchant: {
     name: "Zahira Merchant",
     initials: "ZM",
     color: "#8f5f8c",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://gcoe.sfsu.edu/sites/default/files/styles/sf_state_250x250/public/images/zahira_merchant_bio_250.jpg?h=038a9462&itok=36T-JPy5",
+    position: "50% 24%",
+    scale: 1.08
   },
   radianti: {
     name: "Jaziar Radianti",
     initials: "JR",
     color: "#8f5f8c",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://image.sciencenorway.no/2460685.webp?croph=84.95&cropw=99.78&format=jpg&height=1124&imageId=2460685&width=960&x=0.00&y=9.46",
+    position: "50% 27%",
+    scale: 1.14
   },
   makransky: {
     name: "Guido Makransky",
     initials: "GM",
     color: "#8f5f8c",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://psychology.ku.dk/staff/academic_staff/guido_makransky_1100x600.jpg",
+    position: "50% 24%",
+    scale: 1.14
   },
   bandura: {
     name: "Albert Bandura",
@@ -419,57 +421,63 @@ const researchers = {
     name: "EDM Community",
     initials: "ED",
     color: "#526f8f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://educationaldatamining.org/EDM_ORG/wp-content/uploads/2017/09/edm.png",
+    position: "50% 50%",
+    scale: 0.82,
+    fit: "contain",
+    filter: "none"
   },
   baker: {
     name: "Ryan S. Baker",
     initials: "RB",
     color: "#526f8f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://www.seas.upenn.edu/wp-content/uploads/2025/09/Ryan-Baker.jpg",
+    position: "50% 24%",
+    scale: 1.1
   },
   solar: {
     name: "SoLAR",
     initials: "LA",
     color: "#526f8f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://www.solaresearch.org/wp-content/uploads/2019/04/logo-soLAR.png",
+    position: "50% 50%",
+    scale: 0.84,
+    fit: "contain",
+    filter: "none"
   },
   shaffer: {
     name: "David W. Shaffer",
     initials: "DS",
     color: "#526f8f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://wcer.wisc.edu/images/staff/_galleryPhoto/Shaffer-DW.jpg",
+    position: "50% 24%",
+    scale: 1.1
   },
   isqe: {
     name: "ISQE",
     initials: "QE",
     color: "#526f8f",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://www.qesoc.org/images/qesoc/ISQE-logo-icon.png",
+    position: "50% 50%",
+    scale: 0.86,
+    fit: "contain",
+    filter: "none"
   },
   zimmerman: {
     name: "Barry J. Zimmerman",
     initials: "BZ",
     color: "#7853a6",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://www.gc.cuny.edu/sites/default/files/styles/395x225/public/2025-03/Barry_Zimmerman_2560px_1440px.jpg?h=a92f03cd&itok=Oj5_Nbat",
+    position: "50% 25%",
+    scale: 1.14
   },
   bitzer: {
     name: "Donald L. Bitzer",
     initials: "DB",
     color: "#8a6750",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://engr.ncsu.edu/wp-content/uploads/sites/412/2018/04/bitzer-2013.jpg",
+    position: "50% 28%",
+    scale: 1.25
   },
   carbonell: {
     name: "Jaime Carbonell",
@@ -491,8 +499,8 @@ const researchers = {
     name: "Roger Schank",
     initials: "RS",
     color: "#8a6750",
-    photo: "",
-    position: "50% 30%",
+    photo: "https://www.rogerschank.com/lib/images/roger-schank-suit.jpg",
+    position: "50% 24%",
     scale: 1.12
   },
   anderson: {
@@ -515,33 +523,35 @@ const researchers = {
     name: "William J. Clancey",
     initials: "WC",
     color: "#8a6750",
-    photo: "",
-    position: "50% 30%",
+    photo: "https://billclancey.name/uploads/1/0/8/7/108751403/editor/bill-clancey-ihmc-january-2014.jpg?1499613265",
+    position: "50% 28%",
     scale: 1.12
   },
   corbett: {
     name: "Albert T. Corbett",
     initials: "AC",
     color: "#8a6750",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://www.hcii.cmu.edu/sites/default/files/styles/person_portrait_image/public/migrated_files/Albert_Corbett2.jpg.webp?h=ab703daf&itok=UgOCm4F7",
+    position: "50% 28%",
+    scale: 1.1
   },
   vanlehn: {
     name: "Kurt VanLehn",
     initials: "KV",
     color: "#8a6750",
-    photo: "",
+    photo: "https://webapp4.asu.edu/photo-ws/directory_photo/kvanlehn?size=medium&blankImage2=1",
     position: "50% 30%",
-    scale: 1.12
+    scale: 1.1
   },
   aect: {
     name: "AECT",
     initials: "AE",
     color: "#6f6257",
-    photo: "",
-    position: "50% 30%",
-    scale: 1.12
+    photo: "https://higherlogicdownload.s3.amazonaws.com/AECT/48d18aca-4de7-437f-9023-69f2faa948d8/UploadedImages/AECT.png",
+    position: "50% 50%",
+    scale: 0.86,
+    fit: "contain",
+    filter: "none"
   },
   finn: {
     name: "James D. Finn",
@@ -760,7 +770,7 @@ const milestones = [
     researcher: "piaget",
     study: "The Origins of Intelligence in Children.",
     summary: "Piaget described learning as active construction through assimilation, accommodation, and developmental reorganization.",
-    source: "https://www.scirp.org/reference/referencespapers.aspx?referenceid=2751359"
+    source: "https://openlibrary.org/books/OL6116241M/The_origins_of_intelligence_in_children"
   },
   {
     id: "dewey-1938",
@@ -780,7 +790,7 @@ const milestones = [
     researcher: "vygotsky",
     study: "Mind in Society.",
     summary: "Vygotsky put culture, language, and the zone of proximal development at the center of learning with others.",
-    source: "https://www.scirp.org/reference/referencespapers?referenceid=435060"
+    source: "https://openlibrary.org/books/OL7693072M/Mind_in_Society"
   },
   {
     id: "von-glasersfeld-1984",
@@ -868,9 +878,9 @@ const milestones = [
     year: 1991,
     title: "Learning sciences emerges",
     researcher: "brownann",
-    study: "Journal of the Learning Sciences and early ICLS era.",
-    summary: "The learning sciences formed around interdisciplinary study of cognition, culture, technology, design, and real learning environments rather than a single ID curriculum.",
-    source: "https://www.tandfonline.com/journals/hlns20"
+    study: "Journal of the Learning Sciences and early ICLS community formation.",
+    summary: "The learning sciences formed as an interdisciplinary community studying cognition, culture, technology, design, and real learning environments rather than a single ID curriculum.",
+    source: "https://www.tandfonline.com/toc/hlns20/1/1"
   },
   {
     id: "design-experiments-1992",
@@ -888,9 +898,9 @@ const milestones = [
     year: 1999,
     title: "How People Learn",
     researcher: "bransford",
-    study: "How People Learn: Brain, Mind, Experience, and School.",
+    study: "How People Learn: Brain, Mind, Experience, and School, edited by Bransford, Brown, and Cocking.",
     summary: "The National Research Council synthesis made the science of learning broadly visible through prior knowledge, deep understanding, metacognition, and learning environments.",
-    source: "https://nap.nationalacademies.org/catalog/9853/how-people-learn-brain-mind-experience-and-school-expanded-edition"
+    source: "https://nap.nationalacademies.org/catalog/6160/how-people-learn-brain-mind-experience-and-school"
   },
   {
     id: "science-learning-centers-2004",
@@ -930,7 +940,7 @@ const milestones = [
     researcher: "papert",
     study: "Mindstorms: Children, Computers, and Powerful Ideas.",
     summary: "Papert extended constructivism into a maker-centered theory: learners build knowledge especially well when they build sharable artifacts.",
-    source: "https://www.scirp.org/reference/referencespapers?referenceid=2179403"
+    source: "https://openlibrary.org/books/OL21521001M/Mindstorms"
   },
   {
     id: "papert-harel-1991",
@@ -1000,7 +1010,7 @@ const milestones = [
     researcher: "malone",
     study: "Making Learning Fun: A Taxonomy of Intrinsic Motivations for Learning.",
     summary: "Malone and Lepper organized intrinsic motivation into individual and interpersonal factors, giving educational game design a vocabulary beyond entertainment.",
-    source: "https://www.scirp.org/reference/referencespapers?referenceid=2686741"
+    source: "https://www.routledge.com/Aptitude-Learning-and-Instruction-Volume-3-Conative-and-Affective-P/Farr-Snow/p/book/9781003163244"
   },
   {
     id: "prensky-2001",
@@ -1020,7 +1030,7 @@ const milestones = [
     researcher: "gee",
     study: "What Video Games Have to Teach Us About Learning and Literacy.",
     summary: "Gee argued that good games model learning principles such as identity, situated meaning, feedback, practice, systems thinking, and problem solving.",
-    source: "https://us.macmillan.com/books/9781403984531/whatvideogameshavetoteachusaboutlearningandliteracy"
+    source: "https://openlibrary.org/isbn/1403961697"
   },
   {
     id: "squire-2006",
@@ -1048,7 +1058,7 @@ const milestones = [
     year: 2014,
     title: "VR instruction meta-analysis",
     researcher: "merchant",
-    study: "Effectiveness of virtual reality-based instruction on students' learning outcomes in K-12 and higher education.",
+    study: "Effectiveness of virtual reality-based instruction on students' learning outcomes in K-12 and higher education: A meta-analysis.",
     summary: "Merchant and colleagues synthesized VR instruction studies, making learning outcomes, learner characteristics, and design features part of the VR evidence conversation.",
     source: "https://doi.org/10.1016/j.compedu.2013.07.033"
   },
@@ -1068,7 +1078,7 @@ const milestones = [
     year: 2020,
     title: "Immersive VR review",
     researcher: "radianti",
-    study: "A systematic review of immersive virtual reality applications for higher education.",
+    study: "A systematic review of immersive virtual reality applications for higher education: Design elements, lessons learned, and research agenda.",
     summary: "Radianti and colleagues mapped higher education VR designs, surfacing gaps around pedagogy, assessment, collaboration, accessibility, and research agenda.",
     source: "https://doi.org/10.1016/j.compedu.2019.103778"
   },
@@ -1090,17 +1100,17 @@ const milestones = [
     researcher: "aect",
     study: "National Education Association Department of Visual Instruction root.",
     summary: "The AECT lineage begins in visual instruction, where media, images, and instructional materials became a professional field before audiovisual and educational technology language emerged.",
-    source: "https://aect.org/history/"
+    source: "https://www.aect.org/aect/about/history"
   },
   {
     id: "finn-1960",
     theory: "edtech-islt",
     year: 1960,
-    title: "Instructional technology field",
+    title: "Instructional technology as process",
     researcher: "finn",
-    study: "Automation, communication theory, and instructional technology discourse.",
+    study: "Early-1960s field shift from audiovisual aids toward instructional technology as a systematic process.",
     summary: "Finn and peers helped shift the field from audiovisual aids toward instructional technology as a systematic design and communication process.",
-    source: "https://aect.org/history/"
+    source: "https://www.aect.org/aect/about/history"
   },
   {
     id: "aect-1970",
@@ -1110,7 +1120,7 @@ const milestones = [
     researcher: "aect",
     study: "Renaming to Association for Educational Communications and Technology.",
     summary: "The 1970 AECT name marks a broader professional identity around educational communications, technology, systems, and design rather than visual media alone.",
-    source: "https://aect.org/history/"
+    source: "https://www.aect.org/aect/about/history"
   },
   {
     id: "aect-1977",
@@ -1140,7 +1150,7 @@ const milestones = [
     researcher: "aect",
     study: "AECT 2008 definition of educational technology.",
     summary: "AECT's 2008 definition emphasized study, ethical practice, facilitating learning, improving performance, and creating, using, and managing technological processes and resources.",
-    source: "https://aect.org/standards/knowledge-base/"
+    source: "https://www.routledge.com/Educational-Technology-A-Definition-with-Commentary/Januszewski-Molenda/p/book/9780805858600"
   },
   {
     id: "coi-2000",
@@ -1180,7 +1190,7 @@ const milestones = [
     researcher: "merrill",
     study: "First Principles of Instruction.",
     summary: "Merrill synthesized common ground across instructional models into a practical design sequence: problem, activation, demonstration, application, and integration.",
-    source: "https://openlearning.mit.edu/mit-faculty/research-based-learning-findings/first-principles-instruction"
+    source: "https://doi.org/10.1007/BF02505024"
   },
   {
     id: "siemens-2005",
@@ -1210,7 +1220,7 @@ const milestones = [
     researcher: "merrienboer",
     study: "Ten Steps to Complex Learning: A Systematic Approach to Four-Component Instructional Design.",
     summary: "Van Merrienboer and Kirschner made 4C-ID more usable for complex skills through whole tasks, supportive information, procedural information, and part-task practice.",
-    source: "https://research.ou.nl/en/publications/ten-steps-to-complex-learning-a-new-approach-to-instruction-and-i"
+    source: "https://research-portal.uu.nl/en/publications/ten-steps-to-complex-learning-a-systematic-approach-to-four-compo/"
   },
   {
     id: "udl-2008",
@@ -1250,7 +1260,7 @@ const milestones = [
     researcher: "bandura",
     study: "Social Foundations of Thought and Action.",
     summary: "The theory foregrounded reciprocal interaction among person, behavior, and environment, making agency a core explanatory construct.",
-    source: "https://en.wikipedia.org/wiki/Social_Foundations_of_Thought_and_Action"
+    source: "https://openlibrary.org/books/OL2537373M/Social_foundations_of_thought_and_action"
   },
   {
     id: "zimmerman-2000",
@@ -1260,7 +1270,7 @@ const milestones = [
     researcher: "zimmerman",
     study: "Attaining Self-Regulation: A Social Cognitive Perspective.",
     summary: "Zimmerman made self-regulation a cyclical learner capability involving forethought, performance control, self-reflection, motivation, and strategy use.",
-    source: "https://www.scirp.org/reference/referencespapers?referenceid=3989448"
+    source: "https://www.sciencedirect.com/science/article/pii/B9780121098902500317"
   },
   {
     id: "bandura-2001",
@@ -1286,10 +1296,10 @@ const milestones = [
     id: "yan-gasevic-2026",
     theory: "social-cognitive-agency",
     year: 2026,
-    title: "Agentivism",
+    title: "Agentivism preprint",
     researcher: "yan",
     study: "Agentivism: a learning theory for the age of artificial intelligence.",
-    summary: "Yan and Gasevic propose Agentivism for human-AI learning: selective delegation, epistemic monitoring, reconstructive internalization, and transfer under reduced support.",
+    summary: "Yan and Gasevic propose Agentivism as a recent AI-era learning theory preprint: selective delegation, epistemic monitoring, reconstructive internalization, and transfer under reduced support.",
     source: "https://arxiv.org/abs/2604.07813"
   },
   {
@@ -1398,7 +1408,7 @@ const aiedMilestones = [
     researcher: "carbonell",
     study: "AI in CAI: An Artificial-Intelligence Approach to Computer-Assisted Instruction.",
     summary: "Carbonell's SCHOLAR moved beyond fixed frames toward semantic networks, generated questions, and mixed-initiative instructional dialogue.",
-    source: "https://cir.nii.ac.jp/crid/1360855569259682560"
+    source: "https://doi.org/10.1109/TMMS.1970.299942"
   },
   {
     id: "aied-sophie-1982",
@@ -1406,9 +1416,9 @@ const aiedMilestones = [
     year: 1982,
     title: "SOPHIE I-III",
     researcher: "jsbrown",
-    study: "Pedagogical, Natural Language and Knowledge Engineering Techniques in SOPHIE I, II, and III.",
+    study: "Pedagogical, Natural Language and Knowledge Engineering Techniques in SOPHIE I, II, and III, by Brown, Burton, and de Kleer.",
     summary: "SOPHIE showed how troubleshooting tutors could combine domain simulation, natural language, diagnosis, and pedagogical strategy.",
-    source: "https://www.scirp.org/reference/referencespapers?referenceid=1179500"
+    source: "https://openlibrary.org/books/OL3084146M/Intelligent_tutoring_systems"
   },
   {
     id: "aied-its-book-1982",
@@ -1416,19 +1426,19 @@ const aiedMilestones = [
     year: 1982,
     title: "ITS field consolidated",
     researcher: "jsbrown",
-    study: "Intelligent Tutoring Systems, edited by Sleeman and Brown.",
+    study: "Intelligent Tutoring Systems, edited by Derek Sleeman and John Seely Brown.",
     summary: "The 1982 volume gathered early AI, cognitive science, and education work into a recognizable intelligent tutoring systems field.",
     source: "https://openlibrary.org/books/OL3084146M/Intelligent_tutoring_systems"
   },
   {
-    id: "aied-guidon-1983",
+    id: "aied-guidon-1987",
     branch: "its-cognitive-modeling",
-    year: 1983,
+    year: 1987,
     title: "GUIDON",
     researcher: "clancey",
-    study: "GUIDON and rule-based expert-system tutoring.",
+    study: "Knowledge-Based Tutoring: The GUIDON Program.",
     summary: "GUIDON explored how expert-system knowledge could be transformed into explanations and tutoring dialogue, making pedagogy a knowledge-engineering problem.",
-    source: "https://link.springer.com/book/10.1007/3-540-55606-0"
+    source: "https://mitpress.mit.edu/9780262031233/knowledge-based-tutoring/"
   },
   {
     id: "aied-cognitive-tutors-1985",
@@ -1436,9 +1446,9 @@ const aiedMilestones = [
     year: 1985,
     title: "Cognitive tutors",
     researcher: "anderson",
-    study: "The LISP Tutor and later ACT-R based Cognitive Tutors.",
+    study: "Intelligent tutoring systems, by Anderson, Boyle, and Reiser.",
     summary: "Anderson's line connected cognitive theory to model-tracing tutors that could diagnose steps, give hints, and scale in mathematics classrooms.",
-    source: "https://www.cmu.edu/homepage/health/2013/spring/revolutionizing-how-we-learn.shtml"
+    source: "https://pubmed.ncbi.nlm.nih.gov/17746875/"
   },
   {
     id: "aied-conference-1987",
@@ -1456,9 +1466,9 @@ const aiedMilestones = [
     year: 1995,
     title: "Bayesian knowledge tracing",
     researcher: "corbett",
-    study: "Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge.",
+    study: "Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge, by Corbett and Anderson.",
     summary: "Bayesian Knowledge Tracing gave adaptive tutors a compact probabilistic learner model for estimating skill mastery over time.",
-    source: "https://www.scirp.org/reference/referencespapers?referenceid=3799359"
+    source: "https://doi.org/10.1007/BF01099821"
   },
   {
     id: "aied-scripts-1977",
@@ -1516,8 +1526,8 @@ const aiedMilestones = [
     year: 2000,
     title: "EDM workshop roots",
     researcher: "edmCommunity",
-    study: "EDM workshops at ITS, AIED, AAAI, UMAP, EC-TEL, and ICALT.",
-    summary: "Educational data mining grew out of workshops attached to ITS, AIED, AAAI, user modeling, and technology-enhanced learning conferences before becoming its own venue.",
+    study: "Workshop roots at ITS and related AIED, user-modeling, and technology-enhanced learning venues.",
+    summary: "Educational data mining grew out of workshops attached to ITS and adjacent AIED, AAAI, user modeling, and technology-enhanced learning conferences before becoming its own venue.",
     source: "https://educationaldatamining.org/edm2008_1/"
   },
   {
@@ -1566,7 +1576,7 @@ const aiedMilestones = [
     year: 2017,
     title: "Handbook of Learning Analytics",
     researcher: "gasevic",
-    study: "Handbook of Learning Analytics, Society for Learning Analytics Research.",
+    study: "Handbook of Learning Analytics, edited by Lang, Siemens, Wise, and Gasevic.",
     summary: "The handbook consolidated LA as a research field and explicitly bridged learning analytics, EDM, theory, methods, ethics, and educational practice.",
     source: "https://www.solaresearch.org/publications/hla-17/"
   },
@@ -1578,7 +1588,7 @@ const aiedMilestones = [
     researcher: "shaffer",
     study: "Quantitative Ethnography.",
     summary: "Shaffer framed QE as a way to combine ethnographic interpretation with statistical modeling to understand the human side of big data.",
-    source: "https://www.qesoc.org/general-quantitative-ethnography/"
+    source: "https://www.lulu.com/shop/david-williamson-shaffer/quantitative-ethnography/paperback/product-1z98mzzd.html"
   },
   {
     id: "aied-icqe-2019",
@@ -1597,7 +1607,7 @@ const aiedMilestones = [
     title: "QE community matures",
     researcher: "isqe",
     study: "International Society for Quantitative Ethnography and ICQE.",
-    summary: "ISQE and recurring ICQE events turned QE from a method cluster into a professional community with webinars, conferences, tools, and shared training pathways.",
+    summary: "By the mid-2020s, ISQE and recurring ICQE events had turned QE from a method cluster into a professional community with webinars, conferences, tools, and shared training pathways.",
     source: "https://www.qesoc.org/"
   },
   {
@@ -1614,10 +1624,10 @@ const aiedMilestones = [
     id: "aied-agentivism-2026",
     branch: "genai-agentic-ai",
     year: 2026,
-    title: "Agentivism as AI-era claim",
+    title: "Agentivism preprint",
     researcher: "yan",
     study: "Agentivism: a learning theory for the age of artificial intelligence.",
-    summary: "Agentivism is best treated here as the GenAI branch meeting agency theory: learning must survive delegation, monitoring, internalization, and reduced support.",
+    summary: "Agentivism is included here as a recent preprint and AI-era claim: the GenAI branch meets agency theory when learning must survive delegation, monitoring, internalization, and reduced support.",
     source: "https://arxiv.org/abs/2604.07813"
   }
 ];
@@ -1991,7 +2001,7 @@ const aiedExplanations = {
     takeaway: "Read ITS as a design space: domain models, student models, tutoring strategies, interfaces, and explanations.",
     connection: "It consolidates early CAI, SOPHIE-like systems, GUIDON-like systems, and cognitive modeling into the AIED lineage."
   },
-  "aied-guidon-1983": {
+  "aied-guidon-1987": {
     why: "GUIDON showed that expert-system knowledge does not automatically become teachable; tutoring requires explanation, sequencing, and dialogue design.",
     takeaway: "Separate expert performance from teachable knowledge and design the pedagogical layer deliberately.",
     connection: "It connects medical expert systems, knowledge engineering, and ITS pedagogy."
@@ -2224,6 +2234,8 @@ function createPortrait(researcherId) {
   portrait.style.setProperty("--accent", person.color);
   portrait.style.setProperty("--photo-position", person.position || "50% 35%");
   portrait.style.setProperty("--photo-scale", person.scale || 1.16);
+  portrait.style.setProperty("--photo-fit", person.fit || "cover");
+  portrait.style.setProperty("--photo-filter", person.filter || "saturate(1.55) contrast(1.24) brightness(1.04) sepia(0.08)");
 
   if (person.photo) {
     const img = document.createElement("img");
