@@ -2099,6 +2099,8 @@ const state = {
   selectedAiedId: "aied-scholar-1970",
   modalContext: "timeline",
   mapFocus: false,
+  leftPanelCollapsed: false,
+  rightPanelCollapsed: false,
   scale: 1
 };
 
@@ -2107,6 +2109,9 @@ const maxYear = 2026;
 const leftPad = 42;
 const rightPad = 42;
 const baseWidth = 2860;
+const minScale = 0.78;
+const maxScale = 1.45;
+const zoomStep = 0.12;
 
 const elements = {
   workbench: document.getElementById("workbench"),
@@ -2114,7 +2119,9 @@ const elements = {
   detailPanel: document.getElementById("detailPanel"),
   filterList: document.getElementById("filterList"),
   resetFilters: document.getElementById("resetFilters"),
+  toggleLeftPanel: document.getElementById("toggleLeftPanel"),
   togglePanels: document.getElementById("togglePanels"),
+  toggleRightPanel: document.getElementById("toggleRightPanel"),
   jumpAiedTree: document.getElementById("jumpAiedTree"),
   aiedTreePanel: document.getElementById("aiedTreePanel"),
   toggleAiedTree: document.getElementById("toggleAiedTree"),
@@ -2176,6 +2183,37 @@ function getSelectedAiedMilestone() {
 function yearToX(year) {
   const width = baseWidth * state.scale - leftPad - rightPad;
   return leftPad + ((year - minYear) / (maxYear - minYear)) * width;
+}
+
+function clampScale(scale) {
+  return Math.min(maxScale, Math.max(minScale, Number(scale.toFixed(2))));
+}
+
+function setTimelineScale(nextScale, anchorClientX) {
+  const previousScale = state.scale;
+  const scale = clampScale(nextScale);
+  if (scale === previousScale) return;
+
+  const viewport = elements.timelineViewport;
+  const rect = viewport.getBoundingClientRect();
+  const anchorX =
+    typeof anchorClientX === "number"
+      ? Math.min(rect.width, Math.max(0, anchorClientX - rect.left))
+      : viewport.clientWidth / 2;
+  const previousCanvasWidth = baseWidth * previousScale;
+  const anchorRatio = (viewport.scrollLeft + anchorX) / previousCanvasWidth;
+  const previousTop = viewport.scrollTop;
+
+  state.scale = scale;
+  renderAll();
+
+  requestAnimationFrame(() => {
+    const nextCanvasWidth = baseWidth * state.scale;
+    const maxScrollLeft = Math.max(0, viewport.scrollWidth - viewport.clientWidth);
+    viewport.scrollLeft = Math.min(maxScrollLeft, Math.max(0, anchorRatio * nextCanvasWidth - anchorX));
+    viewport.scrollTop = previousTop;
+    renderMinimap();
+  });
 }
 
 function createPortrait(researcherId) {
@@ -2581,10 +2619,23 @@ function renderMinimap() {
 }
 
 function renderPanelLayout() {
+  const leftHidden = state.mapFocus || state.leftPanelCollapsed;
+  const rightHidden = state.mapFocus || state.rightPanelCollapsed;
+
   document.body.classList.toggle("is-map-focus", state.mapFocus);
   elements.workbench.classList.toggle("is-map-focus", state.mapFocus);
-  elements.legendPanel.hidden = state.mapFocus;
-  elements.detailPanel.hidden = state.mapFocus;
+  elements.workbench.classList.toggle("is-left-collapsed", leftHidden);
+  elements.workbench.classList.toggle("is-right-collapsed", rightHidden);
+  elements.legendPanel.hidden = leftHidden;
+  elements.detailPanel.hidden = rightHidden;
+  elements.toggleLeftPanel.setAttribute("aria-pressed", String(leftHidden));
+  elements.toggleLeftPanel.textContent = leftHidden ? ">|" : "|<";
+  elements.toggleLeftPanel.title = leftHidden ? "Show left panel" : "Collapse left panel";
+  elements.toggleLeftPanel.setAttribute("aria-label", leftHidden ? "Show left panel" : "Collapse left panel");
+  elements.toggleRightPanel.setAttribute("aria-pressed", String(rightHidden));
+  elements.toggleRightPanel.textContent = rightHidden ? "|<" : ">|";
+  elements.toggleRightPanel.title = rightHidden ? "Show right panel" : "Collapse right panel";
+  elements.toggleRightPanel.setAttribute("aria-label", rightHidden ? "Show right panel" : "Collapse right panel");
   elements.togglePanels.setAttribute("aria-pressed", String(state.mapFocus));
   elements.togglePanels.textContent = state.mapFocus ? "Show panels" : "Map view";
 }
@@ -2667,11 +2718,40 @@ function setupKeyboard() {
   });
 }
 
+function setupWheelZoom() {
+  elements.timelineViewport.addEventListener(
+    "wheel",
+    (event) => {
+      if (!event.ctrlKey) return;
+      event.preventDefault();
+      const direction = event.deltaY < 0 ? 1 : -1;
+      setTimelineScale(state.scale + direction * zoomStep, event.clientX);
+    },
+    { passive: false }
+  );
+}
+
 function setupControls() {
   elements.prevMilestone.addEventListener("click", () => stepMilestone(-1));
   elements.nextMilestone.addEventListener("click", () => stepMilestone(1));
+  elements.toggleLeftPanel.addEventListener("click", () => {
+    state.leftPanelCollapsed = !state.leftPanelCollapsed;
+    renderPanelLayout();
+    requestAnimationFrame(renderMinimap);
+  });
   elements.togglePanels.addEventListener("click", () => {
-    state.mapFocus = !state.mapFocus;
+    if (state.mapFocus) {
+      state.mapFocus = false;
+      state.leftPanelCollapsed = false;
+      state.rightPanelCollapsed = false;
+    } else {
+      state.mapFocus = true;
+    }
+    renderPanelLayout();
+    requestAnimationFrame(renderMinimap);
+  });
+  elements.toggleRightPanel.addEventListener("click", () => {
+    state.rightPanelCollapsed = !state.rightPanelCollapsed;
     renderPanelLayout();
     requestAnimationFrame(renderMinimap);
   });
@@ -2692,12 +2772,10 @@ function setupControls() {
     renderAll();
   });
   elements.zoomIn.addEventListener("click", () => {
-    state.scale = Math.min(1.45, Number((state.scale + 0.12).toFixed(2)));
-    renderAll();
+    setTimelineScale(state.scale + zoomStep);
   });
   elements.zoomOut.addEventListener("click", () => {
-    state.scale = Math.max(0.78, Number((state.scale - 0.12).toFixed(2)));
-    renderAll();
+    setTimelineScale(state.scale - zoomStep);
   });
   window.addEventListener("resize", renderMinimap);
 }
@@ -2705,6 +2783,7 @@ function setupControls() {
 setupDragging();
 setupMinimap();
 setupKeyboard();
+setupWheelZoom();
 setupControls();
 renderAll();
 selectMilestone(state.selectedId, true);

@@ -95,13 +95,15 @@
               <h2 id="activeTheoryName">All theories</h2>
             </div>
             <div class="view-tools" aria-label="View tools">
+              <button id="toggleLeftPanel" class="tool-button panel-toggle" type="button" title="Collapse left panel" aria-label="Collapse left panel">|&lt;</button>
               <button id="togglePanels" class="text-button view-toggle" type="button" aria-pressed="false">Map view</button>
+              <button id="toggleRightPanel" class="tool-button panel-toggle" type="button" title="Collapse right panel" aria-label="Collapse right panel">&gt;|</button>
               <button id="zoomOut" class="tool-button" type="button" title="Zoom out" aria-label="Zoom out">-</button>
               <button id="zoomIn" class="tool-button" type="button" title="Zoom in" aria-label="Zoom in">+</button>
             </div>
           </div>
 
-          <div class="timeline-viewport" id="timelineViewport" tabindex="0" aria-label="Draggable timeline">
+          <div class="timeline-viewport" id="timelineViewport" tabindex="0" aria-label="Draggable timeline. Use Control plus mouse wheel to zoom the timeline map.">
             <div class="timeline-canvas" id="timelineCanvas">
               <div class="year-axis" id="yearAxis" aria-hidden="true"></div>
               <div class="lanes" id="lanes"></div>
