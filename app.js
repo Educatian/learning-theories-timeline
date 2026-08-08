@@ -71,10 +71,10 @@ const theories = [
   },
   {
     id: "egri",
-    name: "EGRI / EGRA Cycle",
-    period: "1980s-2020s",
+    name: "EGRA Teaching Heuristic",
+    period: "documented classroom use",
     color: "#218a8b",
-    lens: "A teaching cycle for experience or encounter, generalization, reinforcement, and integration or application."
+    lens: "An applied lesson-sequencing heuristic—experience or exposure, generalization, reinforcement, and application—not an established learning theory."
   }
 ];
 
@@ -119,6 +119,14 @@ const researchers = {
     position: "64% 0%",
     scale: 1.05
   },
+  atkinsonShiffrin: {
+    name: "Richard Atkinson & Richard Shiffrin",
+    initials: "AS",
+    color: "#316f9f",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
   bruner: {
     name: "Jerome Bruner",
     initials: "JB",
@@ -159,6 +167,14 @@ const researchers = {
     position: "44% 38%",
     scale: 1.85
   },
+  vonGlasersfeld: {
+    name: "Ernst von Glasersfeld",
+    initials: "EG",
+    color: "#4d885d",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
   vygotsky: {
     name: "Lev Vygotsky",
     initials: "LV",
@@ -176,8 +192,8 @@ const researchers = {
     scale: 1.14
   },
   wenger: {
-    name: "Etienne Wenger",
-    initials: "EW",
+    name: "Jean Lave & Etienne Wenger",
+    initials: "LW",
     color: "#4d885d",
     photo: "https://www.wenger-trayner.com/wp-content/uploads/2021/06/22-10-08-Etienne-round-picture-small.jpg",
     position: "50% 30%",
@@ -200,8 +216,8 @@ const researchers = {
     scale: 1.12
   },
   varela: {
-    name: "Francisco Varela",
-    initials: "FV",
+    name: "Varela, Thompson & Rosch",
+    initials: "VT",
     color: "#5f7658",
     photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Francisco%20Varela%20%28cropped%29.jpg",
     position: "50% 28%",
@@ -234,6 +250,14 @@ const researchers = {
   brownann: {
     name: "Ann L. Brown",
     initials: "AB",
+    color: "#526f8f",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
+  learningSciences: {
+    name: "Learning Sciences Community",
+    initials: "LS",
     color: "#526f8f",
     photo: "",
     position: "50% 30%",
@@ -273,6 +297,14 @@ const researchers = {
     position: "50% 18%",
     scale: 1.18
   },
+  logoTeam: {
+    name: "Feurzeig, Papert, Solomon & team",
+    initials: "LG",
+    color: "#c99c2f",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
   harel: {
     name: "Idit Harel",
     initials: "IH",
@@ -296,6 +328,14 @@ const researchers = {
     photo: "https://www.rochester.edu/newscenter/wp-content/uploads/2026/02/inline-2010-05-25_RichardRyan_and_EdwardDeci_201.jpg",
     position: "50% 28%",
     scale: 1.22
+  },
+  deci: {
+    name: "Edward L. Deci",
+    initials: "ED",
+    color: "#8f5f8c",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
   },
   csikszentmihalyi: {
     name: "Mihaly Csikszentmihalyi",
@@ -400,6 +440,22 @@ const researchers = {
     photo: "https://se.tsinghua.edu.cn/__local/9/B2/5C/CA92397E9F0BA4249028F81CBC4_DA4A3616_FD99.jpg",
     position: "50% 32%",
     scale: 1.08
+  },
+  yanGasevic: {
+    name: "Lixiang Yan & Dragan Gasevic",
+    initials: "YG",
+    color: "#7853a6",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
+  },
+  unesco: {
+    name: "UNESCO",
+    initials: "UN",
+    color: "#7853a6",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
   },
   gasevic: {
     name: "Dragan Gasevic",
@@ -562,16 +618,16 @@ const researchers = {
     scale: 1.12
   },
   seels: {
-    name: "Barbara Seels",
-    initials: "BS",
+    name: "Barbara Seels & Rita Richey",
+    initials: "SR",
     color: "#6f6257",
     photo: "",
     position: "50% 30%",
     scale: 1.12
   },
   garrison: {
-    name: "D. Randy Garrison",
-    initials: "RG",
+    name: "Garrison, Anderson & Archer",
+    initials: "GA",
     color: "#b34d6a",
     photo: "https://coi.athabascau.ca/wp-content/uploads/2014/07/rgarrison.jpg",
     position: "50% 26%",
@@ -594,24 +650,24 @@ const researchers = {
     scale: 1.18
   },
   mishra: {
-    name: "Punya Mishra",
-    initials: "PM",
+    name: "Punya Mishra & Matthew Koehler",
+    initials: "MK",
     color: "#b34d6a",
     photo: "https://punyamishra.com/wp-content/uploads/2026/01/PunyaMishra-profilepic1.jpg",
     position: "50% 28%",
     scale: 1.1
   },
   merrienboer: {
-    name: "Jeroen van Merrienboer",
-    initials: "JM",
+    name: "van Merrienboer & Paul Kirschner",
+    initials: "VK",
     color: "#b34d6a",
     photo: "https://www.kirschnered.nl/wp-content/uploads/2023/11/Jeroen.jpeg",
     position: "50% 26%",
     scale: 1.12
   },
   rose: {
-    name: "David H. Rose",
-    initials: "DR",
+    name: "CAST",
+    initials: "CA",
     color: "#b34d6a",
     photo: "https://www.cast.org/wp-content/uploads/2024/12/david-rose.png",
     position: "50% 28%",
@@ -648,6 +704,14 @@ const researchers = {
     photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Jack_Richards.jpg",
     position: "50% 34%",
     scale: 1.08
+  },
+  egraCommunity: {
+    name: "EGRA Classroom Researchers",
+    initials: "EG",
+    color: "#218a8b",
+    photo: "",
+    position: "50% 30%",
+    scale: 1.12
   }
 };
 
@@ -666,11 +730,13 @@ const milestones = [
     id: "pavlov-1897",
     theory: "behaviorism",
     year: 1897,
-    title: "Conditioned reflexes",
+    title: "Digestive-reflex experiments",
     researcher: "pavlov",
-    study: "Work on digestive reflexes later framed classical conditioning.",
-    summary: "Pavlov's laboratory work established a model for learning as association between stimulus and response, shaping later behaviorist education and training models.",
-    source: "https://www.nobelprize.org/prizes/medicine/1904/pavlov/biographical/"
+    study: "Pavlov's 1897 lectures on digestive glands preceded his later conditioned-reflex program.",
+    summary: "Pavlov's physiological work created the experimental platform from which conditioned-reflex research developed; 1897 should not be read as the single invention date of classical conditioning.",
+    source: "https://www.nobelprize.org/prizes/medicine/1904/pavlov/biographical/",
+    dateBasis: "1897 publication of Pavlov's lectures on digestive glands; conditioned-reflex research developed afterward.",
+    evidence: "Official Nobel biographical record"
   },
   {
     id: "watson-1913",
@@ -737,10 +803,12 @@ const milestones = [
     theory: "cognitivism",
     year: 1968,
     title: "Memory system model",
-    researcher: "miller",
+    researcher: "atkinsonShiffrin",
     study: "Human memory: A proposed system and its control processes.",
     summary: "The multi-store memory model helped make cognition diagrammable: sensory input, short-term storage, long-term storage, and control processes.",
-    source: "https://psycnet.apa.org/record/1968-35049-001"
+    source: "https://doi.org/10.1016/S0079-7421(08)60422-3",
+    dateBasis: "Publication year of Atkinson and Shiffrin's book chapter.",
+    evidence: "Original scholarly chapter metadata"
   },
   {
     id: "ausubel-1968",
@@ -770,7 +838,9 @@ const milestones = [
     researcher: "piaget",
     study: "The Origins of Intelligence in Children.",
     summary: "Piaget described learning as active construction through assimilation, accommodation, and developmental reorganization.",
-    source: "https://openlibrary.org/books/OL6116241M/The_origins_of_intelligence_in_children"
+    source: "https://openlibrary.org/books/OL6116241M/The_origins_of_intelligence_in_children",
+    dateBasis: "Year of the cited English edition; Piaget's French work appeared earlier.",
+    evidence: "Bibliographic record"
   },
   {
     id: "dewey-1938",
@@ -790,17 +860,21 @@ const milestones = [
     researcher: "vygotsky",
     study: "Mind in Society.",
     summary: "Vygotsky put culture, language, and the zone of proximal development at the center of learning with others.",
-    source: "https://openlibrary.org/books/OL7693072M/Mind_in_Society"
+    source: "https://openlibrary.org/books/OL7693072M/Mind_in_Society",
+    dateBasis: "Publication year of a posthumous edited English collection, not the origin date of Vygotsky's ideas.",
+    evidence: "Bibliographic record"
   },
   {
     id: "von-glasersfeld-1984",
     theory: "constructivism",
     year: 1984,
     title: "Radical constructivism",
-    researcher: "piaget",
+    researcher: "vonGlasersfeld",
     study: "An Introduction to Radical Constructivism.",
     summary: "Radical constructivism sharpened the epistemological claim: learners organize viable knowledge rather than copy the world directly.",
-    source: "https://www.univie.ac.at/constructivism/EvG/papers/070.pdf"
+    source: "https://constructivist.info/coretexts/glasersfeld1984introduction.pdf",
+    dateBasis: "Year of the English chapter; the German version appeared in 1981.",
+    evidence: "Author text archive"
   },
   {
     id: "lave-wenger-1991",
@@ -870,17 +944,21 @@ const milestones = [
     researcher: "glenberg",
     study: "Embodiment for Education.",
     summary: "Glenberg translated embodied cognition into educational design, emphasizing action, perception, simulation, and physical interaction as supports for understanding.",
-    source: "https://doi.org/10.1002/acp.1408"
+    source: "https://doi.org/10.1016/B978-0-08-046616-3.00018-9",
+    dateBasis: "Publication year of the Handbook of Cognitive Science chapter.",
+    evidence: "Original scholarly chapter metadata"
   },
   {
     id: "learning-sciences-1991",
     theory: "learning-sciences",
     year: 1991,
     title: "Learning sciences emerges",
-    researcher: "brownann",
+    researcher: "learningSciences",
     study: "Journal of the Learning Sciences and early ICLS community formation.",
     summary: "The learning sciences formed as an interdisciplinary community studying cognition, culture, technology, design, and real learning environments rather than a single ID curriculum.",
-    source: "https://www.tandfonline.com/toc/hlns20/1/1"
+    source: "https://www.tandfonline.com/toc/hlns20/1/1",
+    dateBasis: "Launch year of the Journal of the Learning Sciences and early ICLS community formation.",
+    evidence: "Journal archive; field-formation marker, not a single founding event"
   },
   {
     id: "design-experiments-1992",
@@ -903,14 +981,16 @@ const milestones = [
     source: "https://nap.nationalacademies.org/catalog/6160/how-people-learn-brain-mind-experience-and-school"
   },
   {
-    id: "science-learning-centers-2004",
+    id: "science-learning-centers-2003",
     theory: "learning-sciences",
-    year: 2004,
+    year: 2003,
     title: "Science of Learning Centers",
     researcher: "nsf",
     study: "NSF Science of Learning Centers program.",
     summary: "The NSF centers gave the science of learning a visible interdisciplinary infrastructure across cognitive science, neuroscience, education, technology, and social context.",
-    source: "https://new.nsf.gov/funding/opportunities/science-learning-centers-slc"
+    source: "https://www.nsf.gov/funding/opportunities/sl-science-learning/5567/nsf03-573/solicitation",
+    dateBasis: "FY 2003 program solicitation and planned start of NSF investment.",
+    evidence: "Official NSF solicitation"
   },
   {
     id: "handbook-learning-sciences-2006",
@@ -927,10 +1007,12 @@ const milestones = [
     theory: "constructionism",
     year: 1967,
     title: "Logo as microworld",
-    researcher: "papert",
-    study: "Logo programming language and turtle geometry.",
-    summary: "Logo gave learners a computational material for mathematical thinking, making debugging and building part of learning.",
-    source: "https://el.media.mit.edu/logo-foundation/what_is_logo/logo_programming.html"
+    researcher: "logoTeam",
+    study: "The first Logo implementation was created at BBN by a team led by Wally Feurzeig with Seymour Papert and Cynthia Solomon.",
+    summary: "Logo gave learners a computational material for mathematical thinking, making debugging and building part of learning; its creation was collaborative, not Papert's work alone.",
+    source: "https://el.media.mit.edu/logo-foundation/what_is_logo/history.html",
+    dateBasis: "Year of the first working Logo implementation.",
+    evidence: "Logo Foundation historical account"
   },
   {
     id: "papert-1980",
@@ -967,7 +1049,7 @@ const milestones = [
     theory: "games-immersive",
     year: 1971,
     title: "Intrinsic motivation",
-    researcher: "deciRyan",
+    researcher: "deci",
     study: "Effects of Externally Mediated Rewards on Intrinsic Motivation.",
     summary: "Deci showed that some external rewards can reduce intrinsic motivation, giving game-based learning an early warning about points, badges, prizes, and controlling feedback.",
     source: "https://doi.org/10.1037/h0030644"
@@ -1153,14 +1235,16 @@ const milestones = [
     source: "https://www.routledge.com/Educational-Technology-A-Definition-with-Commentary/Januszewski-Molenda/p/book/9780805858600"
   },
   {
-    id: "coi-2000",
+    id: "coi-1999",
     theory: "instructional-design",
-    year: 2000,
+    year: 1999,
     title: "Community of Inquiry",
     researcher: "garrison",
     study: "Critical Inquiry in a Text-Based Environment: Computer Conferencing in Higher Education.",
     summary: "Garrison, Anderson, and Archer gave online learning design a durable model: cognitive presence, social presence, and teaching presence working together.",
-    source: "https://auspace.athabascau.ca/handle/2149/739"
+    source: "https://doi.org/10.1016/S1096-7516(00)00016-6",
+    dateBasis: "Crossref publication date (March 1999); the article is also commonly cited as 2000.",
+    evidence: "Original peer-reviewed article metadata"
   },
   {
     id: "gagne-1965",
@@ -1250,7 +1334,9 @@ const milestones = [
     researcher: "bandura",
     study: "Social Learning Theory.",
     summary: "Bandura connected observation, modeling, self-efficacy, and agency. This becomes a precursor for later agentic accounts of learning.",
-    source: "https://journals.sagepub.com/doi/10.1177/105960117700200317"
+    source: "https://books.google.com/books/about/Social_Learning_Theory.html?id=HFokAQAAMAAJ",
+    dateBasis: "Publication year of Bandura's book.",
+    evidence: "Publisher bibliographic record"
   },
   {
     id: "bandura-1986",
@@ -1260,7 +1346,9 @@ const milestones = [
     researcher: "bandura",
     study: "Social Foundations of Thought and Action.",
     summary: "The theory foregrounded reciprocal interaction among person, behavior, and environment, making agency a core explanatory construct.",
-    source: "https://openlibrary.org/books/OL2537373M/Social_foundations_of_thought_and_action"
+    source: "https://catalogue.bnf.fr/ark:/12148/cb374021254",
+    dateBasis: "Publication year of Bandura's book.",
+    evidence: "National-library bibliographic record"
   },
   {
     id: "zimmerman-2000",
@@ -1297,40 +1385,24 @@ const milestones = [
     theory: "social-cognitive-agency",
     year: 2026,
     title: "Agentivism preprint",
-    researcher: "yan",
+    researcher: "yanGasevic",
     study: "Agentivism: a learning theory for the age of artificial intelligence.",
     summary: "Yan and Gasevic propose Agentivism as a recent AI-era learning theory preprint: selective delegation, epistemic monitoring, reconstructive internalization, and transfer under reduced support.",
-    source: "https://arxiv.org/abs/2604.07813"
+    source: "https://arxiv.org/abs/2604.07813",
+    dateBasis: "Preprint posting year.",
+    evidence: "Preprint—proposed theory, not yet established or peer reviewed"
   },
   {
-    id: "clt-1986",
+    id: "egra-2023",
     theory: "egri",
-    year: 1986,
-    title: "Communicative design turn",
-    researcher: "richards",
-    study: "Approaches and Methods in Language Teaching.",
-    summary: "Communicative language teaching created a broader home for cycles that move from meaningful encounter to rule noticing and applied use.",
-    source: "https://www.cambridge.org/core/books/approaches-and-methods-in-language-teaching/0A8B4286B0A67B4B793D894D9F810D55"
-  },
-  {
-    id: "egri-1990",
-    theory: "egri",
-    year: 1990,
-    title: "Encounter to rule",
-    researcher: "richards",
-    study: "EGRI / EGRA style lesson sequencing.",
-    summary: "This lane treats EGRI as an instructional cycle: learners encounter examples, infer generalizations, reinforce patterns, then integrate or apply them.",
-    source: "https://www.teachingenglish.org.uk/professional-development/teachers/knowing-subject/articles/inductive-approach"
-  },
-  {
-    id: "egra-2022",
-    theory: "egri",
-    year: 2022,
-    title: "Classroom applications",
-    researcher: "richards",
-    study: "EGRA technique studies in writing and grammar classrooms.",
-    summary: "Recent classroom reports use experience, generalization, reinforcement, and application as a practical lesson arc rather than a full theory of learning.",
-    source: "https://www.researchgate.net/publication/360529186_Proceedings_of_Internasional_Scientific-Practical_Conference_Samarqand_Uzbekiztan_2022"
+    year: 2023,
+    title: "EGRA classroom heuristic",
+    researcher: "egraCommunity",
+    study: "Analysis of EGRA in teaching recount-text writing.",
+    summary: "Classroom literature uses experience, generalization, reinforcement, and application as a practical lesson arc. The accessible evidence does not establish a single originator or justify treating EGRA as a learning theory.",
+    source: "https://doi.org/10.37304/jcp.v11i1.14881",
+    dateBasis: "Publication year of a peer-reviewed classroom implementation study.",
+    evidence: "Classroom report; historical origin remains unresolved"
   }
 ];
 
@@ -1451,14 +1523,16 @@ const aiedMilestones = [
     source: "https://pubmed.ncbi.nlm.nih.gov/17746875/"
   },
   {
-    id: "aied-conference-1987",
+    id: "aied-conference-1983",
     branch: "its-cognitive-modeling",
-    year: 1987,
-    title: "AIED conference community",
+    year: 1983,
+    title: "First international AIE conference",
     researcher: "aiedCommunity",
-    study: "Third International Conference on Artificial Intelligence and Education.",
-    summary: "By the late 1980s, AI and education had enough shared problems, systems, and methods to appear as a recurring international research community.",
-    source: "https://journals.sagepub.com/doi/10.3233/AIC-1987-0110"
+    study: "The first International Conference on Artificial Intelligence and Education was held in Exeter, UK.",
+    summary: "The 1983 conference marks the emergence of a recurring international community focused on the overlap between artificial intelligence and education.",
+    source: "https://doi.org/10.1007/s40593-022-00313-2",
+    dateBasis: "Year of the first international conference, as documented in a peer-reviewed field history.",
+    evidence: "Peer-reviewed historical account"
   },
   {
     id: "aied-bkt-1995",
@@ -1524,11 +1598,13 @@ const aiedMilestones = [
     id: "aied-edm-workshops-2000",
     branch: "edm-la-qe",
     year: 2000,
-    title: "EDM workshop roots",
+    title: "Earliest listed EDM workshop root",
     researcher: "edmCommunity",
-    study: "Workshop roots at ITS and related AIED, user-modeling, and technology-enhanced learning venues.",
-    summary: "Educational data mining grew out of workshops attached to ITS and adjacent AIED, AAAI, user modeling, and technology-enhanced learning conferences before becoming its own venue.",
-    source: "https://educationaldatamining.org/edm2008_1/"
+    study: "The official EDM 2008 history lists an ITS 2000 workshop among the workshops that preceded the conference.",
+    summary: "Educational data mining developed through workshops at ITS and later AIED, AAAI, user-modeling, and technology-enhanced learning venues before becoming its own conference.",
+    source: "https://www.educationaldatamining.org/EDM2008/",
+    dateBasis: "Earliest workshop year listed on the official EDM 2008 conference history—not a claim that the whole field began at one event.",
+    evidence: "Official conference history"
   },
   {
     id: "aied-edm-2008",
@@ -1538,7 +1614,9 @@ const aiedMilestones = [
     researcher: "edmCommunity",
     study: "First International Conference on Educational Data Mining, Montreal.",
     summary: "EDM became an international conference for computational approaches to educational data across computer science, education, psychology, psychometrics, and statistics.",
-    source: "https://educationaldatamining.org/edm2008_1/"
+    source: "https://www.educationaldatamining.org/EDM2008/",
+    dateBasis: "Year of the first International Conference on Educational Data Mining.",
+    evidence: "Official conference site"
   },
   {
     id: "aied-edm-state-2009",
@@ -1601,34 +1679,28 @@ const aiedMilestones = [
     source: "https://link.springer.com/book/10.1007/978-3-030-33232-7"
   },
   {
-    id: "aied-isqe-2024",
-    branch: "edm-la-qe",
-    year: 2024,
-    title: "QE community matures",
-    researcher: "isqe",
-    study: "International Society for Quantitative Ethnography and ICQE.",
-    summary: "By the mid-2020s, ISQE and recurring ICQE events had turned QE from a method cluster into a professional community with webinars, conferences, tools, and shared training pathways.",
-    source: "https://www.qesoc.org/"
-  },
-  {
     id: "aied-genai-2023",
     branch: "genai-agentic-ai",
     year: 2023,
-    title: "LLM tutoring turn",
-    researcher: "yan",
-    study: "Generative AI enters mainstream educational dialogue and tutoring design.",
-    summary: "Large language models made conversational help cheap and general, raising new questions about correctness, dependence, assessment, and transfer.",
-    source: "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
+    title: "Generative AI guidance",
+    researcher: "unesco",
+    study: "UNESCO Guidance for Generative AI in Education and Research.",
+    summary: "UNESCO's guidance marks the rapid mainstreaming of generative AI in education and foregrounds human agency, inclusion, privacy, governance, and pedagogical validation.",
+    source: "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+    dateBasis: "Publication year of UNESCO's guidance—not the invention date of LLM tutoring.",
+    evidence: "Official intergovernmental guidance"
   },
   {
     id: "aied-agentivism-2026",
     branch: "genai-agentic-ai",
     year: 2026,
     title: "Agentivism preprint",
-    researcher: "yan",
+    researcher: "yanGasevic",
     study: "Agentivism: a learning theory for the age of artificial intelligence.",
     summary: "Agentivism is included here as a recent preprint and AI-era claim: the GenAI branch meets agency theory when learning must survive delegation, monitoring, internalization, and reduced support.",
-    source: "https://arxiv.org/abs/2604.07813"
+    source: "https://arxiv.org/abs/2604.07813",
+    dateBasis: "Preprint posting year.",
+    evidence: "Preprint—proposed theory, not yet established or peer reviewed"
   }
 ];
 
@@ -1758,7 +1830,7 @@ const milestoneExplanations = {
     takeaway: "Design around prior knowledge, deep conceptual organization, metacognition, assessment, and learner-centered environments.",
     connection: "It is a public-facing science-of-learning anchor that overlaps with but does not reduce to instructional design."
   },
-  "science-learning-centers-2004": {
+  "science-learning-centers-2003": {
     why: "The NSF centers gave science of learning a major institutional form across labs, disciplines, and applied learning problems.",
     takeaway: "Read the science of learning as a research infrastructure joining cognitive science, neuroscience, education, social context, and technology.",
     connection: "It broadens the learning sciences lane into a larger science-of-learning movement."
@@ -1888,7 +1960,7 @@ const milestoneExplanations = {
     takeaway: "Clarify the outcome type, gain attention, activate prerequisites, guide performance, elicit practice, give feedback, and support retention and transfer.",
     connection: "It bridges cognitive processing assumptions with systematic lesson and training design."
   },
-  "coi-2000": {
+  "coi-1999": {
     why: "It gave online and blended learning a design language for quality interaction instead of treating discussion forums as neutral containers.",
     takeaway: "Plan for cognitive presence, social presence, and teaching presence together: tasks, community, facilitation, and direct instruction all matter.",
     connection: "CoI extends social constructivist ideas into online instructional design and anticipates later blended learning frameworks."
@@ -1958,20 +2030,10 @@ const milestoneExplanations = {
     takeaway: "Design AI-supported learning around selective delegation, verification, internalization, and transfer with reduced support.",
     connection: "It reorganizes earlier theories around human-AI interaction and the difference between task success and durable capability."
   },
-  "clt-1986": {
-    why: "Communicative language teaching shifted attention from form alone to meaningful use, interaction, and communicative purpose.",
-    takeaway: "Let learners encounter language in use before isolating patterns, practicing them, and applying them in context.",
-    connection: "This provides a practical home for EGRI or EGRA-style lesson cycles."
-  },
-  "egri-1990": {
-    why: "The cycle makes lesson flow explicit: encounter examples, generalize a pattern, reinforce the pattern, then integrate it into use.",
-    takeaway: "Use it as a planning scaffold for grammar, vocabulary, writing, or concept lessons where learners move from examples to transfer.",
-    connection: "It is a teaching design cycle rather than a full theory, so it is best shown as applied pedagogy."
-  },
-  "egra-2022": {
-    why: "Recent classroom studies show how EGRA-like sequences can support writing and grammar practice in concrete settings.",
+  "egra-2023": {
+    why: "Classroom studies document EGRA as a four-stage teaching heuristic, but the accessible evidence does not support a single originator or a status equal to a learning theory.",
     takeaway: "Pair inductive noticing with guided reinforcement and real application tasks so the cycle does not stop at rule naming.",
-    connection: "This keeps the EGRI / EGRA lane grounded in classroom implementation."
+    connection: "This lane is retained as applied pedagogy and is deliberately separated from established learning theories."
   }
 };
 
@@ -2011,8 +2073,8 @@ const aiedExplanations = {
     takeaway: "Represent the target cognitive skill clearly enough that the tutor can compare learner steps to a model of expert performance.",
     connection: "This branch ties AIED directly back to cognitivism and cognitive architecture."
   },
-  "aied-conference-1987": {
-    why: "The recurring AIED conference community marks the field becoming more than scattered systems: it had shared venues, debates, and technical-pedagogical problems.",
+  "aied-conference-1983": {
+    why: "The first international AI-and-education conference marks the field becoming more than scattered systems: it had a shared venue, debates, and technical-pedagogical problems.",
     takeaway: "Read AIED as a research community with its own infrastructure, not just as a collection of tutoring systems.",
     connection: "It stabilizes the ITS branch before EDM, LA, and QE later expand what counts as educational AI evidence."
   },
@@ -2086,13 +2148,8 @@ const aiedExplanations = {
     takeaway: "Show QE as a field-building moment: proceedings, reviewers, shared methods, and interdisciplinary cases.",
     connection: "It creates a community-level continuation of ENA and QE work inside the learning analytics orbit."
   },
-  "aied-isqe-2024": {
-    why: "ISQE and recurring ICQE events show QE maturing into a professional community with training, tools, webinars, and annual exchange.",
-    takeaway: "Use QE when the goal is to model complex human activity while preserving interpretive accountability.",
-    connection: "This links the AIED data branch to learning sciences, discourse analysis, ethnography, and human-centered AI."
-  },
   "aied-genai-2023": {
-    why: "LLMs make tutoring-like dialogue broadly available, but they also weaken the assumption that successful output means learner understanding.",
+    why: "UNESCO's guidance documents the rapid educational arrival of generative AI while emphasizing human agency, inclusion, privacy, governance, and evidence of pedagogical value.",
     takeaway: "Design for verification, source checking, task decomposition, reflection, and transfer rather than only fluent answers.",
     connection: "This is the immediate technical condition that makes Agentivism worth positioning in the tree."
   },
@@ -2155,8 +2212,9 @@ const elements = {
   detailResearcher: document.getElementById("detailResearcher"),
   detailStudy: document.getElementById("detailStudy"),
   detailLens: document.getElementById("detailLens"),
-  detailSource: document.getElementById("detailSource")
-  ,
+  detailDateBasis: document.getElementById("detailDateBasis"),
+  detailEvidence: document.getElementById("detailEvidence"),
+  detailSource: document.getElementById("detailSource"),
   aiedTree: document.getElementById("aiedTree"),
   milestoneDialog: document.getElementById("milestoneDialog"),
   modalClose: document.getElementById("modalClose"),
@@ -2169,6 +2227,7 @@ const elements = {
   modalWhy: document.getElementById("modalWhy"),
   modalTakeaway: document.getElementById("modalTakeaway"),
   modalConnection: document.getElementById("modalConnection"),
+  modalVerification: document.getElementById("modalVerification"),
   modalSource: document.getElementById("modalSource"),
   modalPrev: document.getElementById("modalPrev"),
   modalNext: document.getElementById("modalNext")
@@ -2188,6 +2247,49 @@ function getAiedBranch(id) {
 
 function getSelectedAiedMilestone() {
   return aiedMilestones.find((milestone) => milestone.id === state.selectedAiedId);
+}
+
+function getDateBasis(item) {
+  return (
+    item.dateBasis ||
+    "Year of the cited publication, launch, or event; it may not be the first appearance of the underlying idea."
+  );
+}
+
+function getEvidenceStatus(item) {
+  if (item.evidence) return item.evidence;
+
+  const source = item.source.toLowerCase();
+  if (source.includes("arxiv.org")) return "Preprint—not peer reviewed";
+  if (
+    source.includes("doi.org") ||
+    source.includes("pubmed.ncbi.nlm.nih.gov") ||
+    source.includes("psycnet.apa.org") ||
+    source.includes("jstor.org") ||
+    source.includes("eric.ed.gov")
+  ) {
+    return "Scholarly publication or bibliographic metadata";
+  }
+  if (
+    source.includes(".gov/") ||
+    source.includes("unesco.org") ||
+    source.includes("aect.org") ||
+    source.includes("solaresearch.org") ||
+    source.includes("educationaldatamining.org") ||
+    source.includes("qesoc.org")
+  ) {
+    return "Official institutional or professional-society record";
+  }
+  if (
+    source.includes("openlibrary.org") ||
+    source.includes("worldcat.org") ||
+    source.includes("books.google.com") ||
+    source.includes("archive.org") ||
+    source.includes("catalogue.bnf.fr")
+  ) {
+    return "Bibliographic record";
+  }
+  return "Publisher, university, or organizational source trail";
 }
 
 function yearToX(year) {
@@ -2285,30 +2387,35 @@ function renderFilters() {
 function renderResearchers() {
   elements.researcherStrip.innerHTML = "";
   const selected = getSelectedMilestone();
+  const usedContributors = new Set(
+    [...milestones, ...aiedMilestones].map((milestone) => milestone.researcher),
+  );
 
-  Object.entries(researchers).forEach(([id, person]) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = `researcher-button ${selected.researcher === id ? "is-active" : ""}`;
-    button.style.setProperty("--accent", person.color);
-    button.appendChild(createPortrait(id));
+  Object.entries(researchers)
+    .filter(([id]) => usedContributors.has(id))
+    .forEach(([id, person]) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = `researcher-button ${selected.researcher === id ? "is-active" : ""}`;
+      button.style.setProperty("--accent", person.color);
+      button.appendChild(createPortrait(id));
 
-    const label = document.createElement("span");
-    label.textContent = person.name;
-    button.appendChild(label);
+      const label = document.createElement("span");
+      label.textContent = person.name;
+      button.appendChild(label);
 
-    button.addEventListener("click", () => {
-      const match = milestones.find((milestone) => milestone.researcher === id);
-      const aiedMatch = aiedMilestones.find((milestone) => milestone.researcher === id);
-      if (match) {
-        selectMilestone(match.id, true);
-      } else if (aiedMatch) {
-        openAiedPopup(aiedMatch.id);
-      }
+      button.addEventListener("click", () => {
+        const match = milestones.find((milestone) => milestone.researcher === id);
+        const aiedMatch = aiedMilestones.find((milestone) => milestone.researcher === id);
+        if (match) {
+          selectMilestone(match.id, true);
+        } else if (aiedMatch) {
+          openAiedPopup(aiedMatch.id);
+        }
+      });
+
+      elements.researcherStrip.appendChild(button);
     });
-
-    elements.researcherStrip.appendChild(button);
-  });
 }
 
 function renderAxis() {
@@ -2452,6 +2559,8 @@ function renderDetail() {
   elements.detailResearcher.textContent = person.name;
   elements.detailStudy.textContent = milestone.study;
   elements.detailLens.textContent = theory.lens;
+  elements.detailDateBasis.textContent = getDateBasis(milestone);
+  elements.detailEvidence.textContent = getEvidenceStatus(milestone);
   elements.detailSource.href = milestone.source;
   elements.detailPortrait.innerHTML = "";
   elements.detailPortrait.appendChild(createPortrait(milestone.researcher));
@@ -2499,7 +2608,7 @@ function renderModalContent(item, groupName, fallbackLens, explanation) {
   elements.modalTheory.textContent = groupName;
   setTypingModalTitle(item.title);
   elements.modalSummary.textContent = item.summary;
-  elements.modalStudy.textContent = `${item.study} Researcher: ${person.name}.`;
+  elements.modalStudy.textContent = `${item.study} Key contributor(s): ${person.name}.`;
   elements.modalWhy.textContent = explanation.why || fallbackLens;
   elements.modalTakeaway.textContent =
     explanation.takeaway ||
@@ -2507,6 +2616,7 @@ function renderModalContent(item, groupName, fallbackLens, explanation) {
   elements.modalConnection.textContent =
     explanation.connection ||
     "This event connects the timeline lane to adjacent learning theories and later instructional designs.";
+  elements.modalVerification.textContent = `${getDateBasis(item)} Evidence: ${getEvidenceStatus(item)}.`;
   elements.modalSource.href = item.source;
   elements.modalPortrait.innerHTML = "";
   elements.modalPortrait.appendChild(createPortrait(item.researcher));

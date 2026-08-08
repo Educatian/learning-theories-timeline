@@ -23,7 +23,7 @@
     <img alt="Static HTML" src="https://img.shields.io/badge/static-HTML%20%2B%20CSS%20%2B%20JS-1d1d1b" />
     <img alt="GitHub Pages" src="https://img.shields.io/badge/deployed-GitHub%20Pages-316f9f" />
     <img alt="Open Graph" src="https://img.shields.io/badge/Discord-preview%20ready-7853a6" />
-    <img alt="Research Map" src="https://img.shields.io/badge/mode-interactive%20research%20sketch-c94c3b" />
+    <img alt="Fact checked" src="https://img.shields.io/badge/fact--checked-August%202026-9e1b32" />
   </p>
 </div>
 
@@ -52,7 +52,7 @@ The app is fully static. There is no framework runtime, no build step, and no ba
 - Learning Sciences and Science of Learning milestones
 - Internal motivation, flow, digital game-based learning, VR, and immersive learning
 - Instructional Design models and AECT / ISLT field formation
-- EGRI / EGRA as an applied teaching cycle
+- EGRA as a documented teaching heuristic, explicitly not presented as an established learning theory
 - AIED lineage from CAI and ITS to SCHOLAR, SOPHIE, GUIDON, cognitive tutors, Schank, AutoTutor, agents, and GenAI
 - EDM, LAK / SoLAR, Epistemic Network Analysis, Learning Analytics, and Quantitative Ethnography
 - Agentivism as a recent AI-era preprint and proposed theory, cross-linked with agency rather than treated as an established standalone tradition
@@ -70,9 +70,11 @@ The app is fully static. There is no framework runtime, no build step, and no ba
 - Use previous / next controls to move chronologically.
 - Expand the AIED Tree to inspect AI-in-education as a separate research lineage.
 
-## Research And Source Notes
+## Fact-check And Source Notes
 
-Milestones are intentionally short, but each item includes a source trail. Recent cleanup replaced weak or generic references with stronger sources where possible, including DOI pages, official field pages, publisher records, National Academies pages, Open Library bibliographic records, and professional society pages.
+The August 2026 audit reviewed all timeline records and corrected material attribution, date, DOI, and source problems. The app now identifies each date as a cited publication, edition, launch, or event and labels the linked evidence as scholarly, official/institutional, bibliographic, preprint, or contextual.
+
+See the complete [fact-check notes](FACT_CHECK.md) for the correction log, evidence hierarchy, and remaining limits.
 
 Examples of source-sensitive decisions:
 
@@ -80,6 +82,8 @@ Examples of source-sensitive decisions:
 - Agentivism is labeled as a preprint / proposed theory.
 - Learning Sciences is treated as an interdisciplinary field formation, not as an Instructional Design lane.
 - AIED is shown as a separate tree because it is a research lineage rather than a single learning theory.
+- The first international AIED conference is dated to Exeter in 1983; the 2000 EDM item is described as a workshop root, not the field's founding.
+- EGRA is retained only as a documented classroom heuristic; the unsupported 1986/1990 origin story was removed.
 - QE means Quantitative Ethnography.
 
 ## Portraits And Logos
@@ -111,7 +115,10 @@ https://educatian.github.io/learning-theories-timeline/?v=2
 +-- index.html
 +-- styles.css
 +-- app.js
++-- FACT_CHECK.md
 +-- og-image.png
++-- tests/
+|   +-- data-integrity.mjs
 +-- .nojekyll
 +-- .github/
     +-- workflows/
@@ -141,6 +148,7 @@ The workflow publishes:
 - `index.html`
 - `styles.css`
 - `app.js`
+- `FACT_CHECK.md`
 - `og-image.png`
 - `.nojekyll`
 
