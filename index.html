@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An interactive timeline of learning theories, instructional design, games, VR, immersive learning, AIED, learning analytics, and quantitative ethnography milestones."
+      content="A fact-checked interactive timeline of learning theories and adjacent instructional design, immersive learning, AIED, learning analytics, and quantitative ethnography milestones."
     />
     <link rel="canonical" href="https://educatian.github.io/learning-theories-timeline/" />
     <meta property="og:type" content="website" />
@@ -29,6 +29,7 @@
       content="Interactive milestones across learning theories, instructional design, games, VR, immersive learning, AIED, EDM, LAK, QE, and agentic AI."
     />
     <meta name="twitter:image" content="https://educatian.github.io/learning-theories-timeline/og-image.png" />
+    <link rel="icon" href="og-image.png" type="image/png" />
     <title>Learning Theories Timeline</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -70,6 +71,14 @@
         </div>
       </header>
 
+      <section class="verification-banner" aria-label="Fact-check status">
+        <div>
+          <strong>Fact-checked: August 2026</strong>
+          <span>Years identify the cited publication, launch, or event—not necessarily the birth of an idea.</span>
+        </div>
+        <a href="https://github.com/Educatian/learning-theories-timeline/blob/main/FACT_CHECK.md" target="_blank" rel="noreferrer">Read the audit notes</a>
+      </section>
+
       <section class="workbench" id="workbench" aria-label="Interactive learning theories visualization">
         <aside class="legend-panel" id="legendPanel" aria-label="Theory filters and researchers">
           <div class="panel-section">
@@ -82,7 +91,7 @@
 
           <div class="panel-section">
             <div class="section-heading">
-              <span>Researchers</span>
+              <span>People &amp; communities</span>
             </div>
             <div class="researcher-strip" id="researcherStrip"></div>
           </div>
@@ -127,7 +136,7 @@
           <p id="detailSummary"></p>
           <dl class="detail-meta">
             <div>
-              <dt>Researcher</dt>
+              <dt>Key contributor(s)</dt>
               <dd id="detailResearcher"></dd>
             </div>
             <div>
@@ -137,6 +146,14 @@
             <div>
               <dt>Learning lens</dt>
               <dd id="detailLens"></dd>
+            </div>
+            <div>
+              <dt>Date basis</dt>
+              <dd id="detailDateBasis"></dd>
+            </div>
+            <div>
+              <dt>Evidence status</dt>
+              <dd id="detailEvidence"></dd>
             </div>
           </dl>
           <a id="detailSource" class="source-link" href="#" target="_blank" rel="noreferrer">Open source trail</a>
@@ -185,6 +202,10 @@
             <section>
               <h3>Connection</h3>
               <p id="modalConnection"></p>
+            </section>
+            <section class="verification-note">
+              <h3>Date and Evidence</h3>
+              <p id="modalVerification"></p>
             </section>
             <div class="modal-actions">
               <button class="text-button" id="modalPrev" type="button">Previous</button>

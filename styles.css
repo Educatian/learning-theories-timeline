@@ -59,6 +59,43 @@ button {
   margin-bottom: 18px;
 }
 
+.verification-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 14px;
+  padding: 12px 16px;
+  border: 1px solid #c8bb9f;
+  border-left: 5px solid #9e1b32;
+  border-radius: 12px;
+  background: rgba(255, 253, 248, 0.92);
+  color: #4f493f;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.verification-banner div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+
+.verification-banner strong {
+  color: #27231d;
+}
+
+.verification-banner a {
+  flex: 0 0 auto;
+  color: #7d1627;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.verification-banner a:hover {
+  text-decoration: underline;
+}
+
 .header-copy {
   min-width: 0;
 }
@@ -1087,6 +1124,13 @@ dd {
   line-height: 1.55;
 }
 
+.verification-note {
+  padding: 12px 14px;
+  border: 1px solid #d8ccb9;
+  border-radius: 10px;
+  background: #f8f3e8;
+}
+
 .modal-actions {
   display: flex;
   align-items: center;
@@ -1131,6 +1175,12 @@ dd {
   .app-header {
     flex-direction: column;
     align-items: start;
+  }
+
+  .verification-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .header-actions {
